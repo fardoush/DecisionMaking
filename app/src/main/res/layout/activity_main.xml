@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#aaccfd"
+    tools:context=".MainActivity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView
+           android:layout_width="wrap_content"
+
+           android:text="Enter Number"
+           android:textSize="30sp"
+           android:layout_marginTop="30dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginLeft="10dp"
+
+
+           android:layout_height="wrap_content" />
+
+       <EditText
+           android:layout_width="match_parent"
+           android:id="@+id/editId"
+           android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:textAlignment="center"
+           android:inputType="numberSigned"
+           android:hint="number"
+           android:textSize="30sp"
+
+           />
+
+
+   </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:onClick="checkNumber"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Check Number"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkNumber"
+        android:id="@+id/resultId"
+        android:hint="Result"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>
